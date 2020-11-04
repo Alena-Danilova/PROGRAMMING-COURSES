@@ -1,0 +1,35 @@
+.seperator-wrapper 
+    display: flex
+    align-items: center
+    justify-content: center
+
+.seperator 
+    width: 250px
+    height: 5px
+    animation: rotate 2s infinite linear
+    -webkit-animation: rotate 10s infinite linear
+
+@-webkit-keyframes rotate 
+  from 
+    background-position: -3000px
+  
+  to 
+    background-position: 0px
+  
+@keyframes rotate 
+  from 
+    background-position: -3000px
+  
+  to 
+    background-position: 0px
+
+.gradient 
+    /* FF3.6+ */
+    background: -moz-linear-gradient(left,  #4DADF5 0%, #5FEDCF 25%, #F64785 50%, #F54BBE 75%, #FFAB52 100%) 
+    /* Chrome,Safari4+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#4DADF5), color-stop(25%, #5FEDCF), color-stop(50%,#F64785), 
+    color-stop(75%,#F54BBE), color-stop(100%,#FFAB52))
+    /* Chrome10+,Safari5.1+ */
+    background: -webkit-linear-gradient(left,  #4DADF5 10%, #5FEDCF 25%, #F64785 50%, #F54BBE 75%, #FFAB52 90%) 
+    /* Opera 11.10+ */
+    background: -o-linear-gradient(left,  #4DADF5 0%, #5FEDCF 25%, #F64785 50%, #F54BBE 75%, #FFAB52 100% 100%) 
